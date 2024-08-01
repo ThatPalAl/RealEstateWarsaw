@@ -3,7 +3,7 @@ from config.settings import HEADERS, BASE_URL
 
 def fetch_html(url):
     response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()  # Raise an exception for HTTP errors
+    response.raise_for_status()  
     return response.text
 
 def save_html(html, filename):

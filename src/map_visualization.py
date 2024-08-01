@@ -15,7 +15,6 @@ def plot_map(df):
     
     map_osm.save('map.html')
 
-# Example usage
 if __name__ == "__main__":
     from data_processor import process_data
     df = process_data('data/processed/otodom_data.csv')

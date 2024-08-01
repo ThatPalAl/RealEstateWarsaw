@@ -11,7 +11,6 @@ def plot_prices(df):
     plt.show()
 
 def display_listings(df):
-    # Display all listings except the description
     for idx, row in df.iterrows():
         print(f"Listing {idx+1}:")
         print(f"Title: {row['title']}")
@@ -22,7 +21,6 @@ def display_listings(df):
         print(f"Size: {row['size']} m²")
         print('-' * 40)
 
-# Example usage
 if __name__ == "__main__":
     df = pd.read_csv('data/processed/otodom_data.csv')
     plot_prices(df)
